@@ -5,7 +5,7 @@ class LittleBrat < Gosu::Window
   LETTER_LIMIT = 60
   def initialize width=Gosu.screen_width, height=Gosu.screen_height, fullscreen=true
     # Full resolution, fullscreen
-    super width, height, !!fullscreen #force to boolean for Gosu
+    super width, height, false #force to boolean for Gosu
     self.caption = "Leave me alone you little brat!"
     # The letters the little brat hits on the keyboard
     @letters, @new_letters = [], []
